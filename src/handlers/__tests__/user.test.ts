@@ -1,7 +1,7 @@
 import * as user from '../user';
 
 describe('user handler', () => {
-    it('should create a new user', async () => {
+    it('user test should create a new user', async () => {
         const req = {body: {username: 'hello', password: 'h1'}}
         const res = {json({token}) {
             expect({token}).toBeTruthy()
